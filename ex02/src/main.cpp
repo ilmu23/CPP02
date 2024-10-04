@@ -13,25 +13,25 @@
 int32_t	main(void)
 {
 	Fixed		a;
-	Fixed const	b( Fixed(5.05f) * Fixed(2));;
+	Fixed const	b(Fixed(5.05f) * Fixed(2));;
 
-	std::cout << a << std::endl;
-	std::cout << ++a << std::endl;
-	std::cout << a << std::endl;
-	std::cout << a++ << std::endl;
-	std::cout << a << std::endl;
+	std::cout << a << "\n";
+	std::cout << ++a << "\n";
+	std::cout << a << "\n";
+	std::cout << a++ << "\n";
+	std::cout << a << "\n";
 
-	std::cout << b << std::endl << std::endl;
+	std::cout << b << "\n\n";
 
-	std::cout << Fixed::max(a, b) << std::endl;
-	std::cout << Fixed::min(a, b) << std::endl << std::endl;
+	std::cout << Fixed::max(a, b) << "\n";
+	std::cout << Fixed::min(a, b) << "\n\n";
 
-	std::cout << "a < b: " << (a < b) << std::endl;
-	std::cout << "a > b: " << (a > b) << std::endl;
-	std::cout << "a <= b: " << (a <= b) << std::endl;
-	std::cout << "a >= b: " << (a >= b) << std::endl;
-	std::cout << "a == b: " << (a == b) << std::endl;
-	std::cout << "a != b: " << (a != b) << std::endl;
+	std::cout << "a < b: " << (a < b) << "\n";
+	std::cout << "a > b: " << (a > b) << "\n";
+	std::cout << "a <= b: " << (a <= b) << "\n";
+	std::cout << "a >= b: " << (a >= b) << "\n";
+	std::cout << "a == b: " << (a == b) << "\n";
+	std::cout << "a != b: " << (a != b) << "\n";
 
 	return (0);
 }

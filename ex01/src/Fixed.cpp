@@ -14,38 +14,38 @@ const int	Fixed::_bits = 8;
 
 Fixed::Fixed(void)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default constructor called\n";
 	this->setRawBits(0);
 }
 
 Fixed::Fixed(const int n)
 {
-	std::cout << "Int constructor called" << std::endl;
+	std::cout << "Int constructor called\n";
 	this->setRawBits(n << this->_bits);
 }
 
 Fixed::Fixed(const float n)
 {
-	std::cout << "Float constructor called" << std::endl;
+	std::cout << "Float constructor called\n";
 	this->setRawBits(std::roundf(n * (1 << this->_bits)));
 }
 
 Fixed::Fixed(const Fixed &copy)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "Copy constructor called\n";
 	*this = copy;
 }
 
 Fixed &Fixed::operator=(const Fixed &copy)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << "Copy assignment operator called\n";
 	this->setRawBits(copy.getRawBits());
 	return *this;
 }
 
 Fixed::~Fixed(void)
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor called\n";
 }
 
 // set
